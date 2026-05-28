@@ -4,11 +4,6 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         float xValue = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;

@@ -6,7 +6,10 @@ public class Score : MonoBehaviour
 
     void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        score++;
-        Debug.Log($"Score: {score}");
+        if (collision.gameObject.tag != "Hit")
+        {
+            score++;
+            Debug.Log($"Score: {score}");
+        }
     }
 }
